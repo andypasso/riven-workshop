@@ -41,8 +41,8 @@ export default function SectionProjects({ ...rest }) {
   return (
     <div className="cd-section" {...rest}>
       {/* Project 1 START */}
-      <div className={classes.projects}>
-        <div className={classes.container}>
+      <div className={classes.projects+ " " + classes.sectionDark}>
+        <div className={classes.container }>
           <GridContainer>
             <GridItem
               xs={12}

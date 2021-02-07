@@ -52,7 +52,7 @@ export default function SectionFeatures({ ...rest }) {
               classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
             }
           >
-            <h2 className={classes.title}>Begginer TIps</h2>
+            <h2 className={classes.title}>Beginner TIps</h2>
           </GridItem>
           <div className={classes.container}>
             <GridContainer className={classes.gridContainer}>

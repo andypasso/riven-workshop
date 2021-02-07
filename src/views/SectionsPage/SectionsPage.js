@@ -122,7 +122,7 @@ export default function SectionsPage() {
               }}
             >
               <span className="cd-dot" />
-              <span className="cd-label">Headers</span>
+              <span className="cd-label">Main</span>
             </a>
           </li>
           <li>
@@ -143,7 +143,7 @@ export default function SectionsPage() {
               }}
             >
               <span className="cd-dot" />
-              <span className="cd-label">Features</span>
+              <span className="cd-label">Beginner tips</span>
             </a>
           </li>
           <li>

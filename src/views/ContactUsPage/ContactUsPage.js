@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import React from "react";
+import React, {useState} from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 
@@ -12,6 +12,8 @@ import Favorite from "@material-ui/icons/Favorite";
 import PinDrop from "@material-ui/icons/PinDrop";
 import Phone from "@material-ui/icons/Phone";
 import BusinessCenter from "@material-ui/icons/BusinessCenter";
+import Check from "@material-ui/icons/Check";
+
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -22,6 +24,11 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 import Footer from "components/Footer/Footer.js";
 import Parallax from "components/Parallax/Parallax.js";
+import SnackbarContent from "components/Snackbar/SnackbarContent.js";
+import Clearfix from "components/Clearfix/Clearfix.js";
+
+// email js
+import emailjs from 'emailjs-com';
 
 
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.js";
@@ -34,6 +41,23 @@ export default function ContactUsPage() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   });
+
+  // js send email 
+  const [open, setOpen] = React.useState(false);
+  const handleClick = () => {
+    setOpen(true) };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('default_service', 'riven_contact', e.target, 'user_EK2BPRyOKDDdWsarxT6o0')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  }
+
   const classes = useStyles();
   return (
     <div>
@@ -59,9 +83,20 @@ export default function ContactUsPage() {
           </GridContainer>
         </div>
       </Parallax>
+      
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.contactContent}>
           <div className={classes.container}>
+          {open && <SnackbarContent
+                      message={
+                        <span>
+                          <b> Message has been sent </b> 
+                        </span>
+                      }
+                      close
+                      color="success"
+                      icon={Check}
+                />}
             <h2 className={classes.title}>Send us a message</h2>
             <GridContainer>
               <GridItem md={12} sm={6}>
@@ -71,12 +106,17 @@ export default function ContactUsPage() {
                   <br />
                   <br />
                 </p>
-                <form>
+                <form onSubmit={sendEmail}>
                   <CustomInput
                     labelText="Your Name"
                     id="float"
+                    name='from_name'
+                    onChange={(event) => {
+                  console.log('hola')}}
                     formControlProps={{
                       fullWidth: true
+                    }}inputProps={{
+                      name: 'from_name',
                     }}
                   />
                   <CustomInput
@@ -85,17 +125,14 @@ export default function ContactUsPage() {
                     formControlProps={{
                       fullWidth: true
                     }}
-                  />
-                  <CustomInput
-                    labelText="Phone"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true
+                    inputProps={{
+                      name: 'from_email',
                     }}
                   />
                   <CustomInput
                     labelText="Your message"
                     id="float"
+                    name='message'
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -103,10 +140,13 @@ export default function ContactUsPage() {
                       multiline: true,
                       rows: 6
                     }}
+                    inputProps={{
+                      name: 'message',
+                    }}
                   />
                   <div className={classes.textCenter}>
-                    <Button color="primary" round>
-                      Contact us
+                    <Button color="primary" round type='submit' onClick={handleClick}>
+                      Send Message
                     </Button>
                   </div>
                 </form>
