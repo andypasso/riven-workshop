@@ -94,7 +94,7 @@ export default function SectionJavascript() {
               <h3>Modal</h3>
             </div>
             <GridContainer>
-              <GridItem xs={12} sm={6} md={6} lg={4}>
+              <GridItem xs={12} sm={10} md={10} lg={8}>
                 <Button block round onClick={() => setClassicModal(true)}>
                   <LibraryBooks />
                   Classic

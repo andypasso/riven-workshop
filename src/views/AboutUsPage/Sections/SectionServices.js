@@ -32,7 +32,8 @@ export default function SectionServices() {
           <h2 className={classes.title}>Wanna help me make this site awesome ? </h2>
           <h5 className={classes.description}>
             If you could help me improve the content provided, I'll eagerly accept that help.
-            A lot of the info here could be way better, so yeah, help is much appreciated. 
+            A lot of the info here could be way better, so yeah, help is much appreciated.
+            You can send me a message through the contact page. 
           </h5>
         </GridItem>
       </GridContainer>

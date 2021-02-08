@@ -40,11 +40,11 @@ export default function SectionContact() {
             keeps me motivated to keep improving this sit , as well as making new ones.
           </h4>
           <GridItem>
-          <a 
+          <a style={{textAlign: 'center'}}
                   href="https://www.buymeacoffee.com/yulandy" 
                   target="_blank">
                     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png"
-                       alt="Buy Me A Coffee" style={{height: '60px !important',width: '217px !important'}} 
+                       alt="Buy Me A Coffee" style={{  height: '60px !important',width: '217px !important'}} 
                     />
                 </a>
           </GridItem>

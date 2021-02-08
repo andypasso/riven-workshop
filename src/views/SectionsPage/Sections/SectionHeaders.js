@@ -46,27 +46,7 @@ export default function SectionHeaders({ ...rest }) {
       {/* HEADER 3 START */}
       <div>
         <Carousel {...settings}>
-          {/* Carousel 1 START */}
-          <div>
-            <div
-              className={classes.pageHeader}
-              style={{ backgroundImage: `url("${dg1}")` }}
-            >
-              <div className={classes.container}>
-                <GridContainer>
-                  <GridItem xs={12} sm={6} md={6}>
-                    <h1 className={classes.title}>Riven Workshop</h1>
-                    <h4>
-                      The aim of this page is to help other Riven players out there.
-                      Here you will be able to easily find Riven mechanichs / matchups guides.
-                    </h4>
-                    <br />
-                  </GridItem>
-                </GridContainer>
-              </div>
-            </div>
-          </div>
-          {/* Carousel 1 END */}
+
           {/* Carousel 2 START */}
           <div>
             <div
@@ -91,20 +71,18 @@ export default function SectionHeaders({ ...rest }) {
                       Here you will be able to easily find Riven mechanichs / matchups guides.
                     </h4>
                     <br />
-                    <h6>Connect with us on:</h6>
+                    <h6>Check the community:</h6>
                     <div>
+                      <a href='https://www.reddit.com/r/rivenmains' target='blank'>
                       <Button color="white" simple size="lg" justIcon>
-                        <i className="fab fa-twitter" />
+                        <i className="fab fa-reddit" />
                       </Button>
+                      </a>
+                      <a href='https://discord.gg/ZYwC7CH9' targte='blank'>
                       <Button color="white" simple size="lg" justIcon>
-                        <i className="fab fa-facebook-square" />
+                        <i className="fab fa-discord" />
                       </Button>
-                      <Button color="white" simple size="lg" justIcon>
-                        <i className="fab fa-google-plus-g" />
-                      </Button>
-                      <Button color="white" simple size="lg" justIcon>
-                        <i className="fab fa-instagram" />
-                      </Button>
+                      </a>
                     </div>
                   </GridItem>
                 </GridContainer>
@@ -112,7 +90,37 @@ export default function SectionHeaders({ ...rest }) {
             </div>
           </div>
           {/* Carousel 2 END */}
+          
+          {/* Carousel 1 START */}
+          <div>
+            <div
+              className={classes.pageHeader}
+              style={{ backgroundImage: `url("${dg1}")` }}
+            >
+              <div className={classes.container}>
+                <GridContainer>
+                  <GridItem xs={12} sm={6} md={6}
+                   className={classes.textCenter}>
+                  <h1 className={classes.title}>Newcomer Videos: BoxBox</h1>
+                    <h4>
+                      If you are new to Riven, check this BoxBox{"'"}s video, it 
+                      will help you a lot to understand rivens kit and playstyle.
+                    </h4>
+                    <br />
+                    <a href = 'https://www.youtube.com/watch?v=-t2ldJojSiQ' target='blank'>
+                  <Button round color="primary" >
+                    BoxBox's videos
+                  </Button>
+                  </a>
+                  </GridItem>
+                </GridContainer>
+              </div>
+            </div>
+          </div>
+          {/* Carousel 1 END */}
+          
           {/* Carousel 3 START */}
+
           <div>
             <div
               className={classes.pageHeader}
@@ -120,29 +128,24 @@ export default function SectionHeaders({ ...rest }) {
             >
               <div className={classes.container}>
                 <GridContainer>
-                  <GridItem
-                    xs={12}
-                    sm={7}
-                    md={7}
-                    className={classNames(classes.mlAuto, classes.textRight)}
-                  >
-                    <h1 className={classes.title}>Riven WorkShop</h1>
+                  <GridItem xs={12} sm={6} md={6}
+                    className={classes.textCenter}>
+                    <h1 className={classes.title}>Newcomer Videos: RivenBadChamp</h1>
                     <h4>
-                      The aim of this page is to help other Riven players out there.
-                      Here you will be able to easily find Riven mechanichs / matchups guides.
+                      If you are new to Riven, check this RivenBadChamp{"'"}s video, it 
+                      will help you a lot to understand rivens kit and playstyle.
                     </h4>
                     <br />
-                    <div>
-                      <Button color="alert" size="lg">
-                        <ShoppingCart /> View Matchups
-                      </Button>
-                    </div>
+                    <a href = 'https://www.youtube.com/watch?v=x4QollqS3So' target='blank'>
+                  <Button round color="primary" >
+                    RivenBadChamp{"'"}s videos
+                  </Button>
+                  </a>
                   </GridItem>
                 </GridContainer>
               </div>
             </div>
           </div>
-          {/* Carousel 3 END */}
         </Carousel>
       </div>
       {/* HEADER 3 END */}

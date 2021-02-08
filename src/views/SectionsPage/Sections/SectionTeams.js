@@ -30,14 +30,42 @@ import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
 import cardProfile4Square from "assets/img/faces/card-profile4-square.jpg";
 import cardProfile6Square from "assets/img/faces/card-profile6-square.jpg";
 
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogActions from "@material-ui/core/DialogActions";
+import LibraryBooks from "@material-ui/icons/LibraryBooks";
+import Slide from "@material-ui/core/Slide";
+import Close from "@material-ui/icons/Close";
+
+import ReactMarkdown from "react-markdown";
+import AndyModal from './AndyModal'
+
+
+
+import matchups from './matchups'
+
 const useStyles = makeStyles(teamsStyle);
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="down" ref={ref} {...props} />;
+});
 
 export default function SectionTeams({ ...rest }) {
   const classes = useStyles();
+  const [classicModal, setClassicModal] = React.useState(false);
+  const [AatroxModal, setAatroxModal] = React.useState(false)
+  const [MalphiteModal, setMalphiteModal] = React.useState(false);
+
+  
+// matchups.map((matchup) => { return( eval(matchup.state) )})
+
+
   return (
     <div className="cd-section" {...rest}>
       {/* Team 1 START */}
       <div className={classes.team + " " + classes.sectionDark}>
+        {console.log(classes)}
         <div className={classes.container}>
           <GridContainer>
             <GridItem
@@ -57,200 +85,99 @@ export default function SectionTeams({ ...rest }) {
             </GridItem>
           </GridContainer>
           <GridContainer>
-            <GridItem xs={12} sm={3} md={3}>
+            {
+              matchups.map(
+                (matchup, index) => {
+                  return(
+                    <GridItem xs={12} sm={4} md={4}>
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={marc} alt="..." className={classes.img} />
+                    <img src={matchup.image} alt={matchup.name} className={classes.img} />
                   </a>
                 </CardAvatar>
                 <CardBody>
-                  <h4 className={classes.cardTitle}>Alec Thompson</h4>
+                  <h4 className={classes.cardTitle}>{matchup.name}</h4>
                   <Muted>
-                    <h6 className={classes.cardCategory}>CEO / Co-Founder</h6>
+                    <h6 className={classes.cardCategory}>Hard</h6>
                   </Muted>
                   <p className={classes.description}>
-                    And I love you like Kanye loves Kanye. We need to restart
-                    the human foundation.
+                    {matchup.tldr}
                   </p>
                 </CardBody>
                 <CardFooter profile className={classes.justifyContent}>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="twitter"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
+
+                {/* modal starts here */ }
+                <GridItem xs={12} sm={6} md={6} lg={6}>
+                  <AndyModal matchup={matchup}> </AndyModal>
+
+                {/* <Button block round color="primary" onClick={() => setClassicModal(true)}>
+                Full info
+                </Button>
+                <Dialog
+                  classes={{
+                    root: classes.modalRoot,
+                    paper: classes.modal
+                  }}
+                  open={classicModal}
+                  TransitionComponent={Transition}
+                  keepMounted
+                  onClose={() => setClassicModal(false)}
+                  aria-labelledby="classic-modal-slide-title"
+                  aria-describedby="classic-modal-slide-description"
+                >
+                  <DialogTitle
+                    id="classic-modal-slide-title"
+                    disableTypography
+                    className={classes.modalHeader}
                   >
-                    <i className="fab fa-twitter" />
-                  </Button>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="facebook"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
+                    <Button
+                      simple
+                      className={classes.modalCloseButton}
+                      key="close"
+                      aria-label="Close"
+                      onClick={() => setClassicModal(false)}
+                    >
+                      {" "}
+                      <Close className={classes.modalClose} />
+                    </Button>
+                    <h4 className={classes.modalTitle}>{matchup.name} Matchup</h4>
+                  </DialogTitle>
+                  <DialogContent
+                    id="classic-modal-slide-description"
+                    className={classes.modalBody}
                   >
-                    <i className="fab fa-facebook" />
-                  </Button>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="google"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-google" />
-                  </Button>
+                    <ReactMarkdown source={matchup.crucial} />
+                    <ReactMarkdown source={matchup.lvl1} />
+                    <ReactMarkdown source={matchup.lvl2} />
+                    <ReactMarkdown source={matchup.lvl3} />
+                    <ReactMarkdown source={matchup.lvl6} />
+                   
+
+                  </DialogContent>
+                  <DialogActions className={classes.modalFooter}>
+                    <Button
+                      onClick={() => setClassicModal(false)}
+                      color="danger"
+                      simple
+                    >
+                      Close
+                    </Button>
+                  </DialogActions>
+                </Dialog> */}
+              </GridItem>
+
+              {/* modal ends here */}
+
+
+
                 </CardFooter>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={3} md={3}>
-              <Card profile plain>
-                <CardAvatar profile plain>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={kendall} alt="..." className={classes.img} />
-                  </a>
-                </CardAvatar>
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Tania Andrew</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>DESIGNER</h6>
-                  </Muted>
-                  <p className={classes.description}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation. And I love you like Kanye loves Kanye.
-                  </p>
-                </CardBody>
-                <CardFooter profile className={classes.justifyContent}>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="twitter"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-twitter" />
-                  </Button>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="dribbble"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="linkedin"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-linkedin" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={3} md={3}>
-              <Card profile plain>
-                <CardAvatar profile plain>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={christian} alt="..." className={classes.img} />
-                  </a>
-                </CardAvatar>
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Christian Mike</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>Web Developer</h6>
-                  </Muted>
-                  <p className={classes.description}>
-                    I love you like Kanye loves Kanye. Don{"'"}t be scared of
-                    the truth because we need to restart the human foundation.
-                  </p>
-                </CardBody>
-                <CardFooter profile className={classes.justifyContent}>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="facebook"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-facebook" />
-                  </Button>
-                  <Button
-                    href="#pablo"
-                    justIcon
-                    simple
-                    color="dribbble"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={3} md={3}>
-              <Card profile plain>
-                <CardAvatar profile plain>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={avatar} alt="..." />
-                  </a>
-                </CardAvatar>
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Rebecca Stormvile</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>Web Developer</h6>
-                  </Muted>
-                  <p className={classes.description}>
-                    And I love you like Kanye loves Kanye. We really need to
-                    restart the human foundation.
-                  </p>
-                </CardBody>
-                <CardFooter profile plain className={classes.justifyContent}>
-                  <Button
-                    justIcon
-                    simple
-                    color="google"
-                    href="#pablo"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-google" />
-                  </Button>
-                  <Button
-                    justIcon
-                    simple
-                    color="twitter"
-                    href="#pablo"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-twitter" />
-                  </Button>
-                  <Button
-                    justIcon
-                    simple
-                    color="dribbble"
-                    href="#pablo"
-                    className={classes.btn}
-                    onClick={e => e.preventDefault()}
-                  >
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
+                  )
+                }
+              )
+            }
           </GridContainer>
         </div>
       </div>
