@@ -195,6 +195,7 @@ export default function SectionsPage() {
               <Favorite className={classes.icon} /> by{" "}
               <a
                 href="https://www.linkedin.com/in/andres-dev/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 Yulandy
