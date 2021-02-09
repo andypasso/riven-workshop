@@ -24,6 +24,7 @@ export default function SectionContact() {
           md={8}
           sm={8}
           className={classNames(classes.mrAuto, classes.mlAuto)}
+          
         >
           <h2 className={classNames(classes.title, classes.textCenter)}>
             Wanna help me grow ? 
@@ -33,7 +34,8 @@ export default function SectionContact() {
             if you want to support me , you can buy me a coffe, it helps me a lot , and 
             keeps me motivated to keep improving this sit , as well as making new ones.
           </h4>
-          <GridItem>
+          <GridItem 
+          style={{display:'flex', flexDirection: 'column'}}>
           <a 
             style={{textAlign: 'center'}}
               href="https://www.buymeacoffee.com/yulandy" 
