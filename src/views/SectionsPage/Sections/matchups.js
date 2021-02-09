@@ -507,8 +507,8 @@ const matchups = [
     crucial:"His E gives him attack speed, his W restarts his “stand” animation use that to determine whether or not he has used W, his Q penetrates your armor, his R gives him movement speed as his ult progresses.",
     lvl1: "** Level 1:**   You want to go on him constantly usually but at level 1, it’s okay to just play it safe if you don’t feel confident. Wukong top is a rarity now so if you feel scared just wait for level 3 to own him. Otherwise a standard A>Q>A>Q>A>Q>A.",
     lvl3: "** Level 3:**  Go on him as much as possible. That’s the way to deny Wukong. He has big CDs you can use that to your advantage.",
-    lvl6: "** Level 6:**  ",
-    tldr: "Repeat level 3 but do an all-in and make sure you don’t waste everything on his W."
+    lvl6: "** Level 6:**  Repeat level 3 but do an all-in and make sure you don’t waste everything on his W.",
+    tldr: " Don’t hesitate on going for any trade, punish him for using an ability whenever you can, rush CDR and stay on him, cuz of his big CDs he can’t reply to your trades if you do them often. Don’t waste your abilities on his W. W resets his “stand” aka move animation."
   },
   {
     name:"Yasuo",
