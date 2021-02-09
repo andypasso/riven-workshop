@@ -4,8 +4,6 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 // core components
@@ -17,9 +15,7 @@ import Footer from "components/Footer/Footer.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import SectionDescription from "views/AboutUsPage/Sections/SectionDescription.js";
-import SectionTeam from "views/AboutUsPage/Sections/SectionTeam.js";
 import SectionServices from "views/AboutUsPage/Sections/SectionServices.js";
-import SectionOffice from "views/AboutUsPage/Sections/SectionOffice.js";
 import SectionContact from "views/AboutUsPage/Sections/SectionContact.js";
 
 import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.js";
@@ -83,7 +79,7 @@ export default function AboutUsPage() {
                 href="https://www.linkedin.com/in/andres-dev/"
                 target="_blank"
               >
-                Andy
+                Yulandy
               </a>{" "}
               To help Riven players out there.
             </div>
