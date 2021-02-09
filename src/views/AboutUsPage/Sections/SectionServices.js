@@ -4,12 +4,10 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Gesture from "@material-ui/icons/Gesture";
-import Build from "@material-ui/icons/Build";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import InfoArea from "components/InfoArea/InfoArea.js";
 
 import servicesStyle from "assets/jss/material-kit-pro-react/views/aboutUsSections/servicesStyle.js";
 

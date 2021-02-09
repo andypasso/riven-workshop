@@ -5,24 +5,18 @@ import classNames from "classnames";
 import Carousel from "react-slick";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
+
 // @material-ui/icons
-import Share from "@material-ui/icons/Share";
-import ShoppingCart from "@material-ui/icons/ShoppingCart";
+
 // core components
-import Header from "components/Header/Header.js";
 import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
+
 
 import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle.js";
 
-import bg12 from "assets/img/bg12.jpg";
-import office2 from "assets/img/examples/office2.jpg";
+
 import dg1 from "assets/img/dg1.jpg";
 import dg2 from "assets/img/dg2.jpg";
 import dg3 from "assets/img/dg3.jpg";

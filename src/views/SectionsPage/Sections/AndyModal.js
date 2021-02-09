@@ -7,7 +7,6 @@ import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
-import LibraryBooks from "@material-ui/icons/LibraryBooks";
 import Slide from "@material-ui/core/Slide";
 import Close from "@material-ui/icons/Close";
 import { makeStyles } from "@material-ui/core/styles";

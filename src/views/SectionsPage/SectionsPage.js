@@ -10,10 +10,6 @@ import SectionHeaders from "./Sections/SectionHeaders.js";
 import SectionFeatures from "./Sections/SectionFeatures.js";
 import SectionBlogs from "./Sections/SectionBlogs.js";
 import SectionTeams from "./Sections/SectionTeams.js";
-import SectionProjects from "./Sections/SectionProjects.js";
-import SectionPricing from "./Sections/SectionPricing.js";
-import SectionTestimonials from "./Sections/SectionTestimonials.js";
-import SectionContacts from "./Sections/SectionContacts.js";
 
 import sectionsPageStyle from "assets/jss/material-kit-pro-react/views/sectionsPageStyle.js";
 
@@ -97,10 +93,6 @@ export default function SectionsPage() {
         <SectionFeatures id="features" />
         <SectionBlogs id="blogs" />
         <SectionTeams id="teams" />
-        <SectionProjects id="projects" />
-        <SectionPricing id="pricing" />
-        <SectionTestimonials id="testimonials" />
-        <SectionContacts id="contacts" />
       </div>
       <nav id="cd-vertical-nav">
         <ul>
@@ -164,7 +156,7 @@ export default function SectionsPage() {
               }}
             >
               <span className="cd-dot" />
-              <span className="cd-label">Blogs</span>
+              <span className="cd-label">Mechanics</span>
             </a>
           </li>
           <li>
@@ -185,91 +177,7 @@ export default function SectionsPage() {
               }}
             >
               <span className="cd-dot" />
-              <span className="cd-label">Teams</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#projects"
-              data-number="5"
-              className=""
-              onClick={e => {
-                var isMobile = navigator.userAgent.match(
-                  /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                );
-                if (isMobile) {
-                  // if we are on mobile device the scroll into view will be managed by the browser
-                } else {
-                  e.preventDefault();
-                  smoothScroll("projects");
-                }
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Projects</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#pricing"
-              data-number="6"
-              className=""
-              onClick={e => {
-                var isMobile = navigator.userAgent.match(
-                  /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                );
-                if (isMobile) {
-                  // if we are on mobile device the scroll into view will be managed by the browser
-                } else {
-                  e.preventDefault();
-                  smoothScroll("pricing");
-                }
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Pricing</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#testimonials"
-              data-number="7"
-              className=""
-              onClick={e => {
-                var isMobile = navigator.userAgent.match(
-                  /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                );
-                if (isMobile) {
-                  // if we are on mobile device the scroll into view will be managed by the browser
-                } else {
-                  e.preventDefault();
-                  smoothScroll("testimonials");
-                }
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Testimonials</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contacts"
-              data-number="8"
-              className=""
-              onClick={e => {
-                var isMobile = navigator.userAgent.match(
-                  /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                );
-                if (isMobile) {
-                  // if we are on mobile device the scroll into view will be managed by the browser
-                } else {
-                  e.preventDefault();
-                  smoothScroll("contacts");
-                }
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Contact Us</span>
+              <span className="cd-label">Matchups</span>
             </a>
           </li>
         </ul>
