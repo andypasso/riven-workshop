@@ -59,7 +59,7 @@ export default function SectionHeaders({ ...rest }) {
                       classes.textCenter
                     )}
                   >
-                    <h1 className={classes.title}>Riven Workshop</h1>
+                    <h1 className={classes.title}>Riven Studio</h1>
                     <h4>
                       The aim of this page is to help other Riven players out there.
                       Here you will be able to easily find Riven mechanichs / matchups guides.
