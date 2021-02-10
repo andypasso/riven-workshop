@@ -31,22 +31,14 @@ export default function SectionContact() {
           </h2>
           <h4 className={classNames(classes.description, classes.textCenter)}>
             everything you can find here  is free . 
-            if you want to support me , you can buy me a coffe, it helps me a lot , and 
+            if you want to support me , you can buy me a coffe ( on the buttom right of the page), it helps me a lot , and 
             keeps me motivated to keep improving this sit , as well as making new ones.
           </h4>
           <GridItem 
-          style={{display:'flex', flexDirection: 'column'}}>
-          <a 
-            style={{textAlign: 'center'}}
-              href="https://www.buymeacoffee.com/yulandy" 
-              target="_blank"
-              rel="noopener noreferrer">
+          style={{display:'flex', flexDirection: 'column', alignItems:'center'}}>
+          
+          <a href='https://cafecito.app/yulandy' rel="noopener noreferrer" target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_3.png 1x, https://cdn.cafecito.app/imgs/buttons/button_3_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_3_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_3.png' alt='Invitame un café en cafecito.app' />==> (only for Argentina)</a>
 
-                <a href='https://cafecito.app/yulandy' rel="noopener noreferrer" target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_3.png 1x, https://cdn.cafecito.app/imgs/buttons/button_3_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_3_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_3.png' alt='Invitame un café en cafecito.app' />==> (only for Argentina)</a>
-              <img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png"
-                   alt="Buy Me A Coffee" style={{  height: '60px !important',width: '217px !important'}} 
-              />
-                </a>
           </GridItem>
         </GridItem>
       </GridContainer>
