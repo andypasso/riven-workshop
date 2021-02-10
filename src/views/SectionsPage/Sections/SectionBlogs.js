@@ -135,6 +135,21 @@ export default function SectionBlogs({ ...rest }) {
                     Adrian's Mechanics Video
                   </Button>
                   </a>
+                  <a href = 'https://www.youtube.com/watch?v=CxIVyTw9AYI' target='blank'>
+                  <Button round color="primary" >
+                    Adrian's doublecast guide
+                  </Button>
+                  </a>
+                  <a href = 'https://www.youtube.com/watch?v=CxIVyTw9AYI' target='blank'>
+                  <Button round color="primary" >
+                    RivenMains oneshot combos
+                  </Button>
+                  </a>
+                  <a href = 'https://www.youtube.com/watch?v=CxIVyTw9AYI' target='blank'>
+                  <Button round color="primary" >
+                  Dekar173's wallhops
+                  </Button>
+                  </a>
                 </CardBody>
               </Card>
               
