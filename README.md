@@ -1,3 +1,3 @@
 ## Riven Studio Website 
 
-[live version](studio.riven)
+[live version](riven.studio)
