@@ -50,7 +50,7 @@ export default function SectionTeams({ ...rest }) {
               matchups.map(
                 (matchup, index) => {
                   return(
-                    <GridItem xs={12} sm={4} md={4} style={{display: 'flex'}}>
+                    <GridItem xs={12} sm={4} md={4} style={{display: 'flex'}} key={index}>
               <Card profile plain >
                 <CardAvatar profile plain>
                   <a href="#pablo" onClick={e => e.preventDefault()}>

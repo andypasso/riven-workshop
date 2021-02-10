@@ -88,7 +88,7 @@ export default function SectionsPage() {
       <Header
         color="dark"
         brand="Learn how to Riven"
-        links={<HeaderLinks dropdownHoverColor="transparent" />}
+        links={<HeaderLinks />}
         fixed
       />
       

@@ -124,7 +124,7 @@ export default function SectionHeaders({ ...rest }) {
                 <GridContainer>
                   <GridItem xs={12} sm={6} md={6}
                     className={classes.textCenter}>
-                    <h1 className={classes.title}>Newcomer Videos: RivenBadChamp</h1>
+                    <h2 className={classes.title} style={{color:'white'}}>Newcomer Videos: RivenBadChamp</h2>
                     <h4>
                       If you are new to Riven, check this RivenBadChamp{"'"}s video, it 
                       will help you a lot to understand rivens kit and playstyle.
