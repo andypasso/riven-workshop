@@ -1,4 +1,4 @@
-import AatroxSquare from '../../../assets/img/champions/AatroxSquare.jpg'
+import AatroxSquare from '../../../assets/img/champions/AatroxSquare.png'
 import AkaliSquare from '../../../assets/img/champions/AkaliSquare.png'
 import CamilleSquare from '../../../assets/img/champions/CamilleSquare.png'
 import CassiopeiaSquare from '../../../assets/img/champions/CassiopeiaSquare.png'
