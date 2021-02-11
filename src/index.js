@@ -26,12 +26,7 @@ import AboutUsPage from "views/AboutUsPage/AboutUsPage.js";
 import ContactUsPage from "views/ContactUsPage/ContactUsPage.js";
 import EcommercePage from "views/EcommercePage/EcommercePage.js";
 import SectionsPage from "views/SectionsPage/SectionsPage.js";
-import ReactGA from 'react-ga';
 
-
-
-const TRACKING_ID = "G-V2NSJ7L9W7"; 
-ReactGA.initialize(TRACKING_ID);
 
 var hist = createBrowserHistory();
 
