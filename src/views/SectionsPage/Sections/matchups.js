@@ -589,7 +589,7 @@ const matchups = [
   },
   {
     name:"Tryndamere",
-    difficult:'hard',
+    difficulty:'hard',
     image: TryndamereSquare,
     do:`**Do This** - Take exhaust
     - Lvl 1 all in*
@@ -636,7 +636,7 @@ const matchups = [
   },
   {
     name:"Voibear",
-    difficult:'easy',
+    difficulty:'easy',
     image: VolibearSquare,
     do:`**Do This** 
     - Go for 1 full Q rotation if he wastes his spell
@@ -685,7 +685,7 @@ W + AA and instant Q or E out
   },
   {
     name:"Yorick",
-    difficult:'even',
+    difficulty:'even',
     image: YorickSquare,
     notes: "This guy’s E is everything. Dodge it and you’ll have no problems. His wall is easily avoidable and you can wallhop it with Q3. His ult becomes more problematic as the fight goes on, so end the all-in at 6 as fast possible."
   },
