@@ -106,6 +106,7 @@ const matchups = [
   {
     name:"Camille",
     difficulty:'easy',
+    link:'https://www.reddit.com/r/Rivenmains/comments/kzvcph/weekly_matchup_thread_camille/',
     image:CamilleSquare,
     do:`**Do This**
     - Lvl 1 all-in*
@@ -479,6 +480,7 @@ const matchups = [
   },
   {
     name:"Renekton",
+    link:'https://www.reddit.com/r/Rivenmains/comments/l4tbnl/weekly_matchup_thread_renekton/',
     difficulty:'very hard',
     image: RenektonSquare,
     notes: "**Notes** Play it safe, his W breaks your E, all in only if he is very low on fury, you fight him only if he engages on you."
@@ -589,6 +591,7 @@ const matchups = [
   },
   {
     name:"Tryndamere",
+    link:'https://www.reddit.com/r/Rivenmains/comments/lf9y04/weekly_matchup_thread_tryndamere/',
     difficulty:'hard',
     image: TryndamereSquare,
     do:`**Do This** - Take exhaust
@@ -637,6 +640,7 @@ const matchups = [
   {
     name:"Voibear",
     difficulty:'easy',
+    link:'https://www.reddit.com/r/Rivenmains/comments/laf9zw/weekly_matchup_thread_volibear/',
     image: VolibearSquare,
     do:`**Do This** 
     - Go for 1 full Q rotation if he wastes his spell

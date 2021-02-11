@@ -73,6 +73,15 @@ export default function AndyModal({ matchup }) {
 
                   </DialogContent>
                   <DialogActions className={classes.modalFooter}>
+                    {matchup.link &&
+                    <Button 
+                     color="primary"
+                     href={matchup.link} 
+                     rel="noopener noreferrer" 
+                     target='_blank'
+                    >
+                      Matchup in depth Thread
+                    </Button>}
                     <Button
                       onClick={() => setClassicModal(false)}
                       color="danger"
