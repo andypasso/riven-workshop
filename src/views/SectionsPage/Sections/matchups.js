@@ -5,7 +5,7 @@ import CassiopeiaSquare from '../../../assets/img/champions/CassiopeiaSquare.png
 import ChoGathSquare from '../../../assets/img/champions/ChoGathSquare.png'
 import DariusSquare from '../../../assets/img/champions/DariusSquare.png'
 import Dr_MundoSquare from '../../../assets/img/champions/Dr_MundoSquare.png'
-import EkkoSquare from '../../../assets/img/champions/EkkoSquare.png'
+// import EkkoSquare from '../../../assets/img/champions/EkkoSquare.png'
 import FioraSquare from '../../../assets/img/champions/FioraSquare.png'
 // import FizzSquare from '../../../assets/img/champions/FizzSquare.png'
 // import GalioSquare_Unreleased from '../../../assets/img/champions/GalioSquare_Unreleased.png'

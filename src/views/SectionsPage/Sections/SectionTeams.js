@@ -10,7 +10,6 @@ import Card from "components/Card/Card.js";
 import CardAvatar from "components/Card/CardAvatar.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
-import Muted from "components/Typography/Muted.js";
 import Primary from "components/Typography/Primary.js";
 import Info from "components/Typography/Info.js";
 import Success from "components/Typography/Success.js";
@@ -80,7 +79,7 @@ export default function SectionTeams({ ...rest }) {
                   {matchup.difficulty==='very hard' && <Danger>
                     <h6 className={classes.cardCategory}>{matchup.difficulty}</h6>
                   </Danger>}
-                  
+
                   <p className={classes.description}>
                     {matchup.tldr}
               
