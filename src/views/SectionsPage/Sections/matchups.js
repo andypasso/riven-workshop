@@ -622,7 +622,7 @@ const matchups = [
   },
   {
     name:"Vladimir",
-    difficult:'easy',
+    difficulty:'easy',
     image: VladimirSquare,
     do:`**Do This** 
     - If you are close enough try to all in him (don't use more than 1 Q to gap close)
