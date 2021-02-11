@@ -66,12 +66,10 @@ export default function AndyModal({ matchup }) {
                     id="classic-modal-slide-description"
                     className={classes.modalBody}
                   >
-                    <ReactMarkdown source={matchup.crucial} />
-                    <ReactMarkdown source={matchup.lvl1} />
-                    <ReactMarkdown source={matchup.lvl2} />
-                    <ReactMarkdown source={matchup.lvl3} />
-                    <ReactMarkdown source={matchup.lvl6} />
-                   
+                    <ReactMarkdown source={matchup.do} />
+                    <ReactMarkdown source={matchup.dont} />
+                    <ReactMarkdown source={matchup.notes} />
+
 
                   </DialogContent>
                   <DialogActions className={classes.modalFooter}>

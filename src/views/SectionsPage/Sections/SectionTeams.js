@@ -11,6 +11,11 @@ import CardAvatar from "components/Card/CardAvatar.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 import Muted from "components/Typography/Muted.js";
+import Primary from "components/Typography/Primary.js";
+import Info from "components/Typography/Info.js";
+import Success from "components/Typography/Success.js";
+import Warning from "components/Typography/Warning.js";
+import Danger from "components/Typography/Danger.js";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.js";
 
@@ -50,7 +55,7 @@ export default function SectionTeams({ ...rest }) {
               matchups.map(
                 (matchup, index) => {
                   return(
-                    <GridItem xs={12} sm={4} md={4} style={{display: 'flex'}} key={index}>
+                    <GridItem xs={12} sm={4} md={4} key={index}>
               <Card profile plain >
                 <CardAvatar profile plain>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -59,12 +64,28 @@ export default function SectionTeams({ ...rest }) {
                 </CardAvatar>
                 <CardBody>
                   <h4 className={classes.cardTitle}>{matchup.name}</h4>
-                  <Muted>
-                    <h6 className={classes.cardCategory}>Hard</h6>
-                  </Muted>
+                  
+                  {matchup.difficulty==='very easy' && <Success>
+                    <h6 className={classes.cardCategory}>{matchup.difficulty}</h6>
+                  </Success>}
+                  {matchup.difficulty==='easy' && <Info>
+                    <h6 className={classes.cardCategory}>{matchup.difficulty}</h6>
+                  </Info>}
+                  {matchup.difficulty==='even' && <Primary>
+                    <h6 className={classes.cardCategory}>{matchup.difficulty}</h6>
+                  </Primary>}
+                  {matchup.difficulty==='hard' && <Warning>
+                    <h6 className={classes.cardCategory}>{matchup.difficulty}</h6>
+                  </Warning>}
+                  {matchup.difficulty==='very hard' && <Danger>
+                    <h6 className={classes.cardCategory}>{matchup.difficulty}</h6>
+                  </Danger>}
+                  
                   <p className={classes.description}>
                     {matchup.tldr}
+              
                   </p>
+                
                 </CardBody>
                 <CardFooter profile className={classes.justifyContent}>
 

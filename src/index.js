@@ -36,6 +36,7 @@ ReactDOM.render(
       <Route path="/contact-me" component={ContactUsPage} />
       <Route path="/ecommerce-page" component={EcommercePage} />
       <Route path="/" component={SectionsPage} />
+
     </Switch>
   </Router>,
   document.getElementById("root")
