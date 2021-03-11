@@ -67,12 +67,12 @@ export default function SectionHeaders({ ...rest }) {
                     <br />
                     <h6>Check the community:</h6>
                     <div>
-                      <a href='https://www.reddit.com/r/rivenmains' target='blank'>
+                      <a href='https://www.reddit.com/r/rivenmains' target='blankf'>
                       <Button color="white" simple size="lg" justIcon>
                         <i className="fab fa-reddit" />
                       </Button>
                       </a>
-                      <a href='https://discord.gg/ZYwC7CH9' targte='blank'>
+                      <a href='https://discord.gg/Akx5gHf44s' targte='blank'>
                       <Button color="white" simple size="lg" justIcon>
                         <i className="fab fa-discord" />
                       </Button>
